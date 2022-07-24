@@ -1,0 +1,9 @@
+vscode:
+    image: codercom/code-server:latest
+    ports:
+      - "8080:8080"
+    volumes:
+      - ../:/development/
+      - ./:/home/coder/.config/code-server/
+    restart: always
+    user: "1000:1000"
